@@ -1,4 +1,4 @@
-![Project](./assets/go_price_monitor_poster.png)
+![go_price_monitor_poster](https://user-images.githubusercontent.com/87380701/205478048-81c0e424-3b95-4cc6-9ef6-27087249cdc6.png)
 
 <h3 align="center" >
   Projeto realizado na 2ª Mostra de Pesquisa e extensão no Centro Regional de Espirito Santo do Pinhal
