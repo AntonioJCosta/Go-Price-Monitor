@@ -1,7 +1,7 @@
 ![go_price_monitor_poster](https://user-images.githubusercontent.com/87380701/205478048-81c0e424-3b95-4cc6-9ef6-27087249cdc6.png)
 
 <h3 align="center" >
-  Projeto realizado na 2ª Mostra de Pesquisa e extensão no Centro Regional de Espirito Santo do Pinhal
+  The project was carried out at the 2nd Research and Extension Exhibition at Centro Regional de Espirito Santo do Pinhal university.
 </h3>
 
 <p align="center">
@@ -20,32 +20,32 @@
   </a>
   <a href="https://api.whatsapp.com/send?phone=5519992685736"
         target="_blank" >
-    <img alt="Fale comigo no whatsapp - Antonio Costa" src="https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp">
+    <img alt="Talk to me on WhatsApp - Antonio Costa" src="https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp">
   </a>
 
 </p>
 
-# Sumário
+# Index
 
-- [Linguagem Go](#go_language)
-- [Instalando o projeto](#project_install)
-- [Interface gráfica (GUI)](#gui)
-- [Api WhatsApp Zenvia](#api)
-- [Conexão com o banco de dados](#db_conection)
-- [Download de ferramenta para conexão com o banco](#db_tool)
-- [Criando um banco](#db_create)
-- [Editando variaveis de ambiente](#dot_env)
-- [Executando o projeto](#run_proj)
+- [Go Language](#go_language)
+- [Installing the project](#project_install)
+- [Graphical User Interface (GUI)](#gui)
+- [WhatsApp Zenvia API](#api)
+- [Database connection](#db_connection)
+- [Download the tool for database connection](#db_tool)
+- [Creating a database](#db_create)
+- [Editing environment variables](#dot_env)
+- [Running the project](#run_proj)
 
-## Linguagem Go <a name = "go_language" ></a>
+## Go language <a name="go_language"></a>
 
-Tenha instalada a versão do golang na versão 1.18 ou superior.
+Have Go version 1.18 or higher installed
 
-Link para instalação da linguagem [Download and install](https://go.dev/doc/install)
+Language installation link [Download and install](https://go.dev/doc/install)
 
-## Instalando o projeto <a name = "project_install" ></a>
+## Installing the project <a name="project_install"></a>
 
-Para instalar o projeto junto de suas dependencias, execute os comandos a seguir
+To install the project along with its dependencies, run the following commands
 
 ```
 git clone https://github.com/Antonio-Costa00/Go-Price-Monitor.git
@@ -53,51 +53,50 @@ cd Go-Price-Monitor
 go mod tidy
 ```
 
-## Interface gráfica (GUI) <a name = "gui" ></a>
+## Graphical user interface (GUI) <a name="gui"></a>
 
-No momento de executar a aplicação, pode haver alguns problemas de compatibilidade relacionados
-a aplicação gráfica. Para resolver isso, consulte a documentação oficial do framewrok Fyne
-[Getind Started](https://developer.fyne.io/started/)
+At the time of running the application, there may be some compatibility issues related to the graphics application. To resolve this, refer to the official Fyne framework documentation
+[Get Started](https://developer.fyne.io/started/)
 
-## API WhatsApp Zenvia <a name = "api" ></a>
+## WhatsApp Zenvia API <a name="api"></a>
 
-Para habilitar o envio de mensagens no WhatsApp utilizando a API zenvia, é necessário
-seguir os passos da documentação oficial da API [WhatsApp sender and recipient](https://zenvia.github.io/zenvia-openapi-spec/v2/#section/WhatsApp-sender-and-recipient)
+To enable sending messages on WhatsApp using the Zenvia API, you need to
+follow the steps of the official API documentation [WhatsApp sender and recipient](https://zenvia.github.io/zenvia-openapi-spec/v2/#section/WhatsApp-sender-and-recipient)
 
-## Conexão com o banco de dados <a name = "db_conection" ></a>
+## Database connection <a name="db_connection"></a>
 
-Para executar a aplicação é necessário uma conexão com o banco de dados.
+To run the application, a connection to the database is required.
 
-Para o projeto foi utilizado
-o banco de dados postgreSQL. Caso voce deseje utilizar um banco diferente, altere a forma de conexão em
+For the project was used
+the PostgreSQL database was. If you want to use a different bank, change the connection method in
 `pkg/db`
 
-### Download de ferramenta para conexao com o banco  <a name = "db_tool" ></a>
+### Download the tool for database connection <a name="db_tool"></a>
 
-A forma mais fácil de se criar um banco de dados é com o pgAdmin. O download da ferramenta pode ser feito
-pelo link [Download](https://www.pgadmin.org/download/)
+The easiest way to create a database is with pgAdmin. The tool can be downloaded
+via the link [Download](https://www.pgadmin.org/download/)
 
-### Criando um banco <a name = "db_create" ></a>
+### Creating a database <a name="db_create"></a>
 
-Crie um banco de dados com o nome de _price_monitor_
+Create a database named _price_monitor_
 
-## Editando variaveis de ambiente <a name = "dot_env" ></a>
+## Editing environment variables <a name="dot_env"></a>
 
-Troque o nome do arquivo .env.example para .env e preecha as credenciais de acordo com seus valores.
+Change the file name from .env.example to .env and fill in the credentials according to your values.
 
-## Executando o projeto <a name = "run_proj" ></a>
+## Running the project <a name="run_proj"></a>
 
-Para executar a aplicação
+To run the application
 `go run cmd/main.go`
 
-Para gerar um executavel da aplicação
+To build an executable of the application
 `go build cmd/main.go`
 
 ## Author
 
 👤 **Antonio Costa**
 
-- Github: [@Antonio-Costa00](https://github.com/Antonio-Costa00)
+- GitHub: [@Antonio-Costa00](https://github.com/Antonio-Costa00)
 - Linkedin: [@Antonio Costa](https://www.linkedin.com/in/antonio-costa-099ab0182/)
 
 ## Contributing
