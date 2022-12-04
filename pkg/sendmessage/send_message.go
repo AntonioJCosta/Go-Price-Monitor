@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
-
-	"github.com/Antonio-Costa00/Go-Price-Monitor/pkg/credentials"
 )
 
-func SendMessage(w WhatsApp) {
+// Send a WhatsApp message using the Zenvia API
+func SendMessage(from, token, tel, msg string) {
+
 	// endpoint API WhatsApp
 	const endpoint = "https://api.zenvia.com/v2/channels/whatsapp/messages"
 	// Create a new request using http
@@ -18,12 +18,15 @@ func SendMessage(w WhatsApp) {
 		panic(err)
 	}
 
-	gc := credentials.GetCredentials()
-	w.From = gc.From
-
 	// Add authorization header to the req
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("X-API-TOKEN", gc.X_API_TOKEN)
+	req.Header.Set("X-API-TOKEN", token)
+
+	w := WhatsApp{
+		From:     from,
+		To:       tel,
+		Contents: []Contents{{Type: "text", Text: msg}},
+	}
 
 	// Marshal the struct to JSON
 	jsonReq, err := json.Marshal(w)

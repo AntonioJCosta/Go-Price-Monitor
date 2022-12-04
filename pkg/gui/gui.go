@@ -19,7 +19,7 @@ func UserGUI() UserInput {
 	a := app.New()
 	w := a.NewWindow("Price Monitor using Go")
 	w.SetPadded(true)
-	w.Resize(fyne.NewSize(400, 400))
+	w.Resize(fyne.NewSize(400, 300))
 	w.CenterOnScreen()
 	// In case user close the window (X button) the program will exit
 	w.SetOnClosed(func() {
@@ -37,7 +37,7 @@ func UserGUI() UserInput {
 		Items: []*widget.FormItem{{
 			Text:     "Enter the product name",
 			Widget:   product,
-			HintText: "Ex: Guitarra",
+			HintText: "Ex: Guitar",
 		}, {
 			Text:     "Enter with your phone number",
 			Widget:   tel,
@@ -101,4 +101,18 @@ func UserGUI() UserInput {
 		Value:     val,
 	}
 
+}
+
+func ErrorPopup(errMsg string) {
+	a := app.New()
+	w := a.NewWindow("Price Monitor using Go")
+	w.SetPadded(true)
+	w.Resize(fyne.NewSize(400, 400))
+	w.CenterOnScreen()
+	// In case user close the window (X button) the program will exit
+	w.SetOnClosed(func() {
+		a.Quit()
+	})
+
+	dialog.ShowError(fmt.Errorf(errMsg), w)
 }
