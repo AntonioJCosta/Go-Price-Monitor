@@ -69,7 +69,7 @@ func main() {
 			DB.FirstOrCreate(&p, p)
 		}
 		// Wait for 10 seconds to check again
-		fmt.Println("The product is not in sale. Waiting for 10 seconds to check again...")
+		fmt.Println("The product is not on sale. Waiting for 10 seconds to check again...")
 		time.Sleep(10 * time.Second)
 	}
 }
