@@ -56,7 +56,6 @@ func main() {
 			return
 		}
 		bestProd = scraper.GetLowestPriceProd(products)
-		fmt.Println("Best product: ", bestProd)
 		isProdInSale := val > bestProd.FullPrice
 		if isProdInSale {
 			msg := fmt.Sprintf("🚨 *Product on sale!* The product %s is on sale for R$%.2f. \nAccess the link to buy: %s", bestProd.Name, bestProd.FullPrice, bestProd.Link)
