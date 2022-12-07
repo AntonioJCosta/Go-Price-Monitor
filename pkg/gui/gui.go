@@ -37,7 +37,7 @@ func UserGUI() UserInput {
 		Items: []*widget.FormItem{{
 			Text:     "Enter the product name",
 			Widget:   product,
-			HintText: "Ex: Guitar",
+			HintText: "Ex: Microphone",
 		}, {
 			Text:     "Enter with your phone number",
 			Widget:   tel,
@@ -60,10 +60,10 @@ func UserGUI() UserInput {
 				dialog.ShowError(fmt.Errorf("Please enter a valid telephone number"), w)
 				return
 			}
-			// Check if the telephone has 13 digits
-			isTelephoneValid := len(tel.Text) == 13
+			// Check if the telephone has more than 8 digits
+			isTelephoneValid := len(tel.Text) > 8
 			if !isTelephoneValid {
-				dialog.ShowError(fmt.Errorf("Please, the telephone must have 13 digits"), w)
+				dialog.ShowError(fmt.Errorf("Please, the telephone number must have at least 9 digits"), w)
 				return
 			}
 			// Check if value is a number

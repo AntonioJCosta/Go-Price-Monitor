@@ -59,7 +59,7 @@ func main() {
 		fmt.Println("Best product: ", bestProd)
 		isProdInSale := val > bestProd.FullPrice
 		if isProdInSale {
-			msg := fmt.Sprintf("🚨 *Price dropped!* The product %s is on sale for R$%.2f. \nAccess the link to buy: %s", bestProd.Name, bestProd.FullPrice, bestProd.Link)
+			msg := fmt.Sprintf("🚨 *Product on sale!* The product %s is on sale for R$%.2f. \nAccess the link to buy: %s", bestProd.Name, bestProd.FullPrice, bestProd.Link)
 			sendmessage.SendMessage(from, token, tel, msg)
 			fmt.Println("Message sent with success!")
 			return
