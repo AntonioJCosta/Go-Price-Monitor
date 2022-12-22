@@ -1,4 +1,4 @@
-![go_price_monitor_poster](https://user-images.githubusercontent.com/87380701/205478048-81c0e424-3b95-4cc6-9ef6-27087249cdc6.png)
+![Antonio Costa Poster TCC - En](https://user-images.githubusercontent.com/87380701/209244529-650922f1-a72a-4e0c-b2c9-78dcb91d8ae1.png)
 
 <h3 align="center" >
   The project was carried out at the 2nd Research and Extension Exhibition at Centro Regional de Espirito Santo do Pinhal university.
